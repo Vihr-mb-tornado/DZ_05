@@ -34,9 +34,9 @@ class Character:
 
     def is_alive(self):
         if self.health>0:
-            return 1
+            return True
         else:
-            return 0
+            return False
 
 
 
