@@ -31,3 +31,12 @@ class Character:
 
     def attack(self, target):
         return target.take_damage(self.damage)
+
+    def is_alive(self):
+        if self.health>0:
+            return 1
+        else:
+            return 0
+
+
+

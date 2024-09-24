@@ -14,7 +14,8 @@ print(f'Створено нового персонажа: {player2.name}')
 player1.show_stats()
 player2.show_stats()
 
-while player1.health > 0 and player2.health > 0:
+while player1.is_alive() and player2.is_alive():
+
     damage_done = player1.attack(player2)
     print(attack_message(player1, player2, damage_done))
 
