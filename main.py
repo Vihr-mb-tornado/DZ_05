@@ -1,4 +1,6 @@
 ﻿from character import Character
+from student import Student
+
 def attack_message(attacker: Character, target: Character, damage_done: float) :
     return f'{attacker.name} атакував {target.name}.\n' \
            f'{attacker.name} наніс {damage_done} шкоди. ' \
@@ -24,3 +26,8 @@ while player1.is_alive() and player2.is_alive():
 
 print(f'Обмін ударів :{count}')
 print(f'{player1}\n{player2}')
+
+
+student1 = Student('Stepan', 2006, "В21958", 11)
+student1.show_stats()
+print(f'Вік студента: {student1.get_age()}')
